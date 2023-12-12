@@ -1,0 +1,29 @@
+<MyLayout>
+    id: my_widget
+    BoxLayout:
+        orientation: 'vertical'
+        size: root.width, root.height 
+
+        padding: 50
+        spacing: 20
+
+        MDLabel:
+            id: word_label
+            text_size: self.size
+            halign: 'center'
+            valign: 'middle'
+            text: 'Enter a word'
+            color: 0,0,0,1
+
+        MDTextField:
+            id: word_input
+            multiline: False
+            font_size: 32
+            size_hint: 1, .5
+            hint_text: 'Enter a word'
+
+        MDFillRoundFlatButton: 
+            text: 'Submit'
+            size_hint: 1, .5
+            font_size: 32
+            on_press: root.press()    

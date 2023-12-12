@@ -1,0 +1,21 @@
+<ThreeButtons@Button>
+    size_hint: (None, None)
+    width: 200
+    height: 50
+    pos_hint: {'center_x': 0.5, 'center_y': 0.5}
+
+<MyLayout>
+    BoxLayout:
+        orientation: 'vertical'
+        size: root.width, root.height
+        padding:20
+        spacing:10
+        
+        ThreeButtons:
+            text: "Hello World"
+        
+        ThreeButtons:
+            text: "Hello Life"
+        
+        ThreeButtons:
+            text: "I'm Hungry"

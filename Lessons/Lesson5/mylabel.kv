@@ -1,0 +1,42 @@
+<MyGridLayout>
+
+    name:name
+    id_number:ID_Number
+    job_number:Job_Number
+
+    GridLayout:
+        cols:1
+        size: root.width, root.height
+
+        GridLayout:
+            cols:2
+
+            Label:
+                text: "Name"
+                
+            TextInput:
+                id:name
+                hint_text: "Enter Your Name" 
+                multiline:False
+
+            Label:
+                text: "ID #"
+                
+            TextInput:
+                id:ID_Number
+                hint_text: "Enter Your ID" 
+                multiline:False
+
+            Label:
+                text: "Job #"
+                
+            TextInput:
+                id:Job_Number
+                hint_text: "Enter Your Job Number" 
+                multiline:False
+
+        Button:
+            text: "Submit"
+            font_size: 32
+            on_press: root.press()
+            

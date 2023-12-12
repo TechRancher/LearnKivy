@@ -1,0 +1,54 @@
+#:import utils kivy.utils
+
+<MyGridLayout>
+
+    name:name
+    id_number:ID_Number
+    job_number:Job_Number
+
+    GridLayout:
+        cols:1
+        size: root.width, root.height
+
+        GridLayout:
+            cols:2
+
+            Label:
+                text: "Name"
+                
+            TextInput:
+                id:name
+                hint_text: "Enter Your Name" 
+                hint_text_color: utils.get_color_from_hex("#512E8C")
+                focus: True
+                write_tab: False
+                multiline: False
+
+            Label:
+                text: "ID #"
+                
+            TextInput:
+                id:ID_Number
+                hint_text: "Enter Your ID" 
+                hint_text_color: utils.get_color_from_hex("#512E8C")
+                multiline: False
+                write_tab: False
+                background_color: utils.get_color_from_hex("#2E8C51")
+
+            Label:
+                text: "Job #"
+                
+            TextInput:
+                id:Job_Number
+                hint_text: "Enter Your Job Number" 
+                hint_text_color: utils.get_color_from_hex("#512E8C")
+                write_tab: False
+                multiline: False
+
+        Button:
+            background_normal:""
+            background_color: utils.get_color_from_hex("#2E8C40")
+            text: "Submit"
+            font_size: 32
+            on_press: root.press()
+            color: utils.get_color_from_hex("#2F1187")

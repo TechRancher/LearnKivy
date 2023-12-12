@@ -1,0 +1,31 @@
+<MyLayout>
+    BoxLayout:
+        orientation: 'vertical'
+        size: root.width, root.height 
+
+        padding: 50
+        spacing: 20
+
+        Button:
+            text: "Hello"
+            font_size: 32
+
+        MDFillRoundFlatButton: #Rounded with KivyMD
+            text: "See Ya"
+            font_size: 32
+            size_hint: (1,.5)
+
+# Old Way without using KivyMD
+<RoundedButton@Button>
+    background_color: (0,0,0,0)
+    background_normal: ""
+    canvas.before:
+        Color:
+            rgba: (48/255,84/255,150/255,1)
+        RoundedRectangle:
+            size: self.size
+            pos: self.pos
+            radius: [55]
+   
+
+            

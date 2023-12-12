@@ -1,0 +1,33 @@
+<MyLayout>
+
+    BoxLayout:
+        orientation: 'vertical'
+        size: root.width, root.height 
+
+        Label:
+            id: name_label
+            text: "What's Your Name?"
+            font_size: 32
+            color: (0,1,0,1)
+            canvas.before:
+                Color:
+                    rgba: (0,0,0,1)
+                Rectangle:
+                    size: self.size
+                    pos: self.pos
+            
+        TextInput:
+            id: name_input
+            multiline: False
+            hint_text: "Your Name"
+            size_hint: (1,.5)
+            focus: True
+
+        Button:
+            text: "Submit"
+            font_size: 32
+            color: (0,0,0,1)
+            size_hint: (1,.5)
+            background_normal: ""
+            background_color: (0,0,1,1)
+            on_press: root.press()
