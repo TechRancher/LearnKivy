@@ -1,8 +1,20 @@
 <MyLayout>
+    slide_text: slider_label
     id: my_widget
     BoxLayout:
         orientation: 'vertical'
         size: root.width, root.height 
 
-        padding: 50
-        spacing: 20
+        Label:
+            text: "Slide The Slider"
+            id: slider_label
+            font_size: 32
+
+        Slider:
+            id: slider
+            min: 0
+            max: 50
+            step: 1
+            orientation: 'horizontal'
+            # on_value: slider_label.text = str(int(slider.value))
+            on_value: root.slide_it(*args)
