@@ -1,3 +1,2 @@
 # LearnKivy
-# LearnKivy
-# LearnKivy
+
