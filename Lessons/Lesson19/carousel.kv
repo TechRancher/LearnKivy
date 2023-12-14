@@ -1,0 +1,45 @@
+<MyLayout>
+    MDBoxLayout:
+        orientation: 'vertical'
+        size: root.width, root.height 
+
+        MDCarousel:
+            id: carousel
+            direction: 'right'
+            loop: True
+            MDBoxLayout:
+                orientation: 'vertical'
+                Image:
+                    source: "images/ChrisWindowMike.JPG"
+                    allow_stretch: False
+                MDFillRoundFlatButton:
+                    text: 'next'
+                    pos_hint: {'center_x': .5}
+                    on_press: carousel.load_next()
+            MDBoxLayout:
+                orientation: 'vertical'
+                Image:
+                    source: "images/DSCF0058.JPG"
+                    allow_stretch: False
+                MDFillRoundFlatButton:
+                    text: 'next'
+                    pos_hint: {'center_x': .5}
+                    on_press: carousel.load_next()
+            MDBoxLayout:
+                orientation: 'vertical'
+                Image:
+                    source: "images/Pickup_red.jpg"
+                    allow_stretch: False
+                MDFillRoundFlatButton:
+                    text: 'next'
+                    pos_hint: {'center_x': .5}
+                    on_press: carousel.load_next()
+            MDBoxLayout:
+                orientation: 'vertical'
+                # Pulls image from web
+                AsyncImage:
+                    source: 'https://kivymd.readthedocs.io/en/1.1.1/_static/logo-kivymd.png'
+                MDFillRoundFlatButton:
+                    text: 'next'
+                    pos_hint: {'center_x': .5}
+                    on_press: carousel.load_next()

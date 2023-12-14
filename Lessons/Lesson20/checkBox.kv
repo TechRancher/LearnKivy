@@ -1,0 +1,62 @@
+<MyLayout>
+    MDBoxLayout:
+        orientation: 'vertical'
+        size: root.width, root.height 
+
+        MDLabel:
+            text: "Select Pizza Toppings"
+            halign: 'center'
+            font_style: 'H4'    
+
+        MDGridLayout:
+            cols: 2
+
+            MDLabel:
+                text: "Pepperoni"
+                halign: 'center'
+                font_style: 'H5'
+
+            MDCheckbox:
+                id: pepperoni
+                # size_hint: None, None
+                # size: dp(48), dp(48)
+                on_active: root.checkbox_click(self,self.active, "Pepperoni")
+
+            MDLabel:
+                text: "Meat"
+                halign: 'center'
+                font_style: 'H5'
+
+            MDCheckbox:
+                id: meat
+                # size_hint: None, None
+                # size: dp(48), dp(48)
+                on_active: root.checkbox_click(self,self.active, "Meat")
+
+            MDLabel:
+                text: "Musroom"
+                halign: 'center'
+                font_style: 'H5'
+
+            MDCheckbox:
+                id: musroom
+                # size_hint: None, None
+                # size: dp(48), dp(48)
+                on_active: root.checkbox_click(self,self.active, "Musroom")
+
+            MDLabel:
+                text: "Cheese"
+                halign: 'center'
+                font_style: 'H5'
+
+            MDCheckbox:
+                id: cheese
+                # size_hint: None, None
+                # size: dp(48), dp(48)
+                on_active: root.checkbox_click(self,self.active, "Cheese")
+
+        MDLabel:
+            id: output_label
+            text: ""
+            halign: 'center'
+            font_style: 'H4' 

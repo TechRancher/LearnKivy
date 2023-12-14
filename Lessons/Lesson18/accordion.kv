@@ -1,0 +1,36 @@
+<MyLayout>
+    BoxLayout:
+        orientation: 'vertical'
+        size: root.width, root.height 
+
+        Accordion:
+            orientation: 'vertical'
+            # size_hint_y: None
+            # height: root.height * .5
+            AccordionItem:
+                title: 'Item 1'
+                Label:
+                    text: 'First item'
+                    font_size: 30
+            AccordionItem:
+                title: 'Item 2'
+                Image:
+                    source: "images/IMG_1845.JPG"
+                    allow_stretch: False
+            AccordionItem:
+                title: 'Item 3'
+                Label:
+                    text: 'Third item'
+                    font_size: 32
+            AccordionItem:
+                title: 'Item 4'
+                Label:
+                    text: 'Fourth item'
+                    font_size: 34
+            AccordionItem:
+                title: 'Item 5'
+                Label:
+                    text: 'Fifth item'
+                    font_size: 36
+            
+           
