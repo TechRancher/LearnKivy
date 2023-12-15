@@ -10,11 +10,11 @@ Builder.load_file("accordion.kv")
 class MyLayout(Widget):
     pass
 
-class TheSliderApp(MDApp):
+class TheAccordionApp(MDApp):
     def build(self):
         self.theme_cls.theme_style = "Dark"
         self.theme_cls.primary_palette = "BlueGray"
         return MyLayout()
     
 if __name__ == "__main__":
-    TheSliderApp().run()
+    TheAccordionApp().run()

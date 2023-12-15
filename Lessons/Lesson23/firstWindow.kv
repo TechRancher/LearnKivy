@@ -1,0 +1,23 @@
+#:include secondWindow.kv  
+
+<FirstWindow>
+    name: "first"
+
+    MDBoxLayout:
+        orientation: 'vertical'
+        size: root.width, root.height  
+
+        MDLabel:
+            text: 'First Window'
+            halign: 'center'
+            font_style: 'H4'
+            theme_text_color: 'Custom'
+            text_color: 0, 0, 0, 1  
+
+        MDRaisedButton: 
+            text: 'Go To Second Window'
+            font_style: 'H5'
+            pos_hint: {'center_x': 0.5, 'center_y': 0.5}
+            on_release: 
+                app.root.current = "second"
+                root.manager.transition.direction = "left"

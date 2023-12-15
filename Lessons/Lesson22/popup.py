@@ -5,16 +5,16 @@ from kivy.lang import Builder
 from kivy.core.window import Window 
 from kivymd.app import MDApp 
 
-Builder.load_file("carousel.kv")
+Builder.load_file("popup.kv")
 
 class MyLayout(Widget):
     pass
 
-class TheCarouselApp(MDApp):
+class ThePopupApp(MDApp):
     def build(self):
         self.theme_cls.theme_style = "Dark"
         self.theme_cls.primary_palette = "BlueGray"
         return MyLayout()
     
 if __name__ == "__main__":
-    TheCarouselApp().run()
+    ThePopupApp().run()
