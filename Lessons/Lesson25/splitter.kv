@@ -1,0 +1,29 @@
+<MyLayout>
+
+    MDBoxLayout:
+        orientation: 'vertical'
+        size: root.width, root.height 
+
+        Splitter:
+            # This function does not work with MD well.
+            sizable_from: 'bottom'
+
+            MDRaisedButton:
+                text: 'Button 1'
+                pos_hint: {'center_x': .5, 'center_y': .5}
+                font_size: 32
+
+        MDLabel:
+            text: "This is text"
+            halign: 'center'
+            color: 0,0,0,1
+            font_size: 32
+            
+        Splitter:
+            # This function does not work with MD well.
+            sizable_from: 'top'
+
+            MDRaisedButton:
+                text: 'Button 2'
+                pos_hint: {'center_x': .5, 'center_y': .5}
+                font_size: 32

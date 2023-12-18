@@ -1,0 +1,28 @@
+<MyLayout>
+    MDBottomNavigation:
+        panel_color: .2, .2, .2, 1
+        text_color_active: 1, 1, 1, 1
+        text_color_normal: 1, 1, 1, .5
+        
+        MDBottomNavigationItem:
+            text: 'Tab 1'
+            icon: 'label'
+            MDLabel:
+                text: 'This is Tab 1'
+        MDBottomNavigationItem:
+            text: 'Tab 2'
+            icon: 'image'
+            Image:
+                source: 'images/ChrisWindowMike.JPG'
+        MDBottomNavigationItem:
+            text: 'Tab 3'
+            icon: 'button'
+            BoxLayout:
+                orientation: 'vertical'
+                MDRaisedButton:
+                    text: 'Button 1'
+                MDRaisedButton:
+                    text: 'Button 2'
+                MDRaisedButton:
+                    text: 'Button 3'
+    

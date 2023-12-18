@@ -1,0 +1,20 @@
+<MyLayout>
+
+    MDBoxLayout:
+        orientation: 'vertical'
+        size: root.width, root.height 
+
+        Label:
+            id: click_label
+            text: "Pick Your Favorite Pizza Toppings"
+            color: 0, 0, 0, 1
+            font_size: 32
+
+        Spinner:
+            id: spinner_id
+            text: "Select Toppings"
+            values: ["Pepperoni", "Cheese", "Mushrooms"]
+            on_text: root.spinner_clicked(spinner_id.text)
+
+        Label:  
+            text: ""
