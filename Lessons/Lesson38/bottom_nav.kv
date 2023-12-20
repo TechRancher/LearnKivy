@@ -1,0 +1,36 @@
+BoxLayout:
+    orientation: 'vertical'
+
+    MDTopAppBar:
+        title: "Midwest Metal Roofing"
+        
+    MDBottomNavigation:
+        # color Stuff
+
+        MDBottomNavigationItem:
+            name: 'Home_Screen'
+            text: 'Home'
+            icon: 'home-account'
+            on_tab_press: app.root.ids.scr_mngr.current = 'Home_Screen'
+
+            MDLabel:
+                text: 'User Home Screen'
+                halign: 'center'
+
+        MDBottomNavigationItem:
+            name: 'New_Customer_Screen'
+            text: 'New Customer'
+            icon: 'account-plus'
+
+            MDLabel:
+                text: 'New Customer'
+                halign: 'center'
+
+        MDBottomNavigationItem:
+            name: 'New_Quote_Screen'
+            text: 'New Quote'
+            icon: 'account-hard-hat'
+
+            MDLabel:
+                text: 'New Quote'
+                halign: 'center'

@@ -1,0 +1,32 @@
+MDFloatLayout:
+    MDBoxLayout:
+        orientation: 'vertical'
+        size: root.width, root.height
+
+        MDLabel:
+            id: word_label  
+            text: "Enter your name"
+            text_size: self.size
+            halign: 'center'
+            valign: 'middle'
+            font_style: 'H5'
+
+        MDTextField:
+            id: word_input
+            multiline: False
+            size_hint: 1, .5
+            focus: True
+            halign: 'center'
+            
+
+        MDRaisedButton:
+            text: "Submit Name"
+            font_style: 'H3'
+            size_hint: 1, .5
+            on_release: app.submit()
+
+        MDRaisedButton:
+            text: "Show Records"
+            font_style: 'H3'
+            size_hint: 1, .5
+            on_release: app.show_records()
