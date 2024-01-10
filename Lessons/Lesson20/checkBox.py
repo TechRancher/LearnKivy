@@ -15,7 +15,7 @@ class MyLayout(Widget):
         # Check if the checkbox is checked
         if value is True:
             # Append the topping to the list
-            MyLayout.checks.append(Topping)
+            self.checks.append(Topping)
             # Create a string to hold the toppings
             tops = ''
             # Loop through the list of toppings and add them to the string

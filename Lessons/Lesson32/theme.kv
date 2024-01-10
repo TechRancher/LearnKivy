@@ -1,0 +1,26 @@
+Screen:
+
+    MDRoundFlatIconButton:
+        text: "Light Theme"
+        text_color: (1,0,0,1)
+        icon_color: (0,1,0,1)
+        icon: "lightbulb-on-outline"
+        pos_hint: {'center_x': 0.5,'center_y': 0.8}
+        md_bg_color: app.theme_cls.primary_light
+        on_release: app.theme_cls.theme_style = 'Light'
+
+    MDRoundFlatIconButton:
+        text: "Second Button"
+        text_color: (0,1,0,1)
+        icon_color: (.173, .255, .47, 1)
+        icon: "account-multiple"
+        pos_hint: {'center_x': 0.5,'center_y': 0.6}
+
+    MDRoundFlatIconButton:
+        text: "Dark Theme"
+        text_color: (0,0,1,1)
+        icon_color: (.85,.107,.47,1)
+        icon: "lightbulb-on"
+        pos_hint: {'center_x': 0.5,'center_y': 0.4}
+        md_bg_color: app.theme_cls.primary_dark
+        on_release: app.theme_cls.theme_style = 'Dark'

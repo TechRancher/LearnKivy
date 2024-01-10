@@ -16,8 +16,8 @@ class SecondWindow(Screen):
     pass    
 
 
-class MyLayout(Widget):
-    pass
+# class MyLayout(Widget):
+#     pass
 
 class TheScreensApp(MDApp):
     def build(self):
