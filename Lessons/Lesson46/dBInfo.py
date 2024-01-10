@@ -4,10 +4,10 @@ class Database:
     def __init__(self):
         # Create Database or Connect to one
         self.conn = psycopg2.connect(
-            host="localhost",
-            port="5432",
-            user="postgres",
-            password="SikesFamily14!",
+            host="host",
+            port="2345",
+            user="user",
+            password="password",
             database="myDB",
         )
 
